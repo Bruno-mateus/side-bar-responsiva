@@ -1,7 +1,7 @@
 const li = document.querySelectorAll('#list-data li')
 const menu = document.querySelector('.menu')
 const nav = document.querySelector('nav')
-const navHeader = document.querySelector('header')
+const navHeader = document.querySelector('nav header')
 const navFooter = document.querySelector('footer')
 const avatarFooter = document.querySelector('footer .user')
 
