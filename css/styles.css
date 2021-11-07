@@ -1,0 +1,116 @@
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins', sans-serif;
+}
+nav {
+  height: 100%;
+  background: var(--green);
+  display: inline-flex;
+  padding: 1.4rem;
+  flex-direction: column;
+  position: relative;
+  width: 7.8rem;
+  transition: 200ms ease-in-out;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+nav ul li {
+  padding: 1.3rem;
+  list-style: none;
+  gap: 1.3rem;
+  border-radius: 1.2rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  width: 1px;
+}
+nav ul li:hover {
+  background: var(--light-green);
+  cursor: pointer;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+header .logo {
+  visibility: hidden;
+  opacity: 0;
+  width: 1px;
+}
+header.header {
+  justify-content: space-between;
+}
+header.header > .logo {
+  visibility: visible;
+  opacity: 1;
+  width: 6.4rem;
+}
+#menu:hover {
+  cursor: pointer;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  padding: 1.8rem 0;
+  background-color: var(--light-green);
+  width: 100%;
+}
+footer.footer {
+  justify-content: space-between;
+  padding: 1.4rem;
+}
+.avatar {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 1.2rem;
+}
+.user {
+  display: none;
+  gap: 0.7rem;
+}
+.user-info {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+}
+.user-info h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
